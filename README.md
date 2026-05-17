@@ -1,0 +1,48 @@
+# Gonullu uygulamasi
+
+Gonullu uygulamasi, LupuS dağıtımının paketlerini derlemek üzere hazırlanmıştır.
+Uygulama, docker imajlarını kullanarak, derleme sisteminin kuyruğundan bekleyen paketleri
+pisi paketi haline getirir ve derleme sistemine gönderir.
+
+Bu uygulamayi kullanmak için LupuS kullanmaniz şart değildir. Docker destekleyen
+herhangi bir linux dağıtımınıda da kullanıyor olabilirsiniz.
+
+## Kullanim
+
+Uygulamayı sisteminize indirmek için
+
+  	   git clone https://github.com/TeknoAnka/GONULLU.git
+  	   cd gonullu
+  	   sudo python3 setup.py install
+  	   
+ya da
+
+  	   sudo pip3 install git+https://github.com/TeknoAnka/GONULLU.git
+  	   
+Uygulamayı güncellemek için
+
+  	   sudo pip3 install git+https://github.com/TeknoAnka/GONULLU.git --upgrade
+
+Uygulamaya verilebilecek parametreleri gormek icin:
+
+  	   gonullu -k
+
+ya da
+
+	   gonullu --kullanim
+
+Parametre vermeden kullanırsanız 1 adet cpu ve hafızanın %50'sini kullanacak şekilde ayarlanmistir. 
+
+## Parametreler
+
+* -k veya --kullanim:
+Yazılımın kullanımı ile ilgili bilgi içerir
+
+* -m veya --memory
+Docker tarafından kullanılacak fiziksel ramin limiti
+
+* -c veya --cpu
+Docker tarafından kullanılmak üzere ayarlanacak cpu sayısı
+
+* -e veya --email:
+Mail adresiniz
