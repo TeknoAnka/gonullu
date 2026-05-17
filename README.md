@@ -6,7 +6,7 @@ You do not need to use LupuS to use this application. You can use any Linux dist
 
 ## USE:
 
-To download the application to your system
+To download the application to your system:
 
   	   git clone https://github.com/TeknoAnka/GONULLU.git
   	   cd gonullu
@@ -16,30 +16,26 @@ OR
 
   	   sudo pip3 install git+https://github.com/TeknoAnka/GONULLU.git
   	   
-To update the application
+To update the application:
 
   	   sudo pip3 install git+https://github.com/TeknoAnka/GONULLU.git --upgrade
 
 To see the parameters that can be given to the application:
 
-  	   gonullu -k
-
-OR
-
-	   gonullu --kullanim
+  	   gonullu -k OR gonullu --kullanim
 
 If used without specifying any parameters, it is configured to use 1 CPU and 50% of the memory.
 
 ## Parameters:
 
-* -k OR --kullanim:
+* -k / --kullanim:
 Contains information about the use of the software.
 
-* -m OR --memory
+* -m / --memory
 The limit of physical RAM that can be used by Docker.
 
-* -c OR --cpu
+* -c / --cpu
 Number of CPUs to be allocated for use by Docker
 
-* -e OR --email:
+* -e / --email:
 Mail address
